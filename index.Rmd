@@ -1,0 +1,18 @@
+---
+title: "Niketh Gamage"
+description: |
+  Welcome!
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+![](mypic.jpg)
+
+Welcome to my site. I'm a senior at Macalester College majoring in Physics and Applied Mathematics. I am very interested in data science and I will be using this site to put up some of my work.
