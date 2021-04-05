@@ -7,7 +7,10 @@ navbar:
   right:
     - text: "Home"
       href: index.html
-    - text: "About"
-      href: about.html
-      
+    - text: "Blog"
+      href: blog.html
+    - icon: fa fa-github
+      href: https://github.com/Niketh27
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/niketh-gamage-324923143/
 output: distill::distill_article
