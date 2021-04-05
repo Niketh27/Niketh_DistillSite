@@ -1,5 +1,5 @@
 ---
-title: "Niketh Gamage"
+title: "About me"
 site: distill::distill_website
 description: |
   Welcome!
