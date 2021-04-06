@@ -5,14 +5,14 @@
       "title": "About",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-05T18:15:25-05:00"
+      "last_modified": "2021-04-06T16:06:40-05:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-05T18:15:26-05:00"
+      "last_modified": "2021-04-06T16:06:41-05:00"
     },
     {
       "path": "index.html",
@@ -20,7 +20,7 @@
       "description": "Welcome!",
       "author": [],
       "contents": "\r\n\r\nWelcome to my site. I’m a senior at Macalester College majoring in Physics and Applied Mathematics. I am very interested in data science and I will be using this site to put up some of my work.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-05T18:15:27-05:00"
+      "last_modified": "2021-04-06T16:06:42-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
