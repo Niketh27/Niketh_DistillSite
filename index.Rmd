@@ -15,5 +15,5 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![](mypic.jpg){width=75%}
 
-Welcome to my site. I'm a senior at Macalester College majoring in Physics and Applied Mathematics. I am very interested in data science and I will be using this site to put up some of my work.
+Welcome to my site. I'm a senior at Macalester College majoring in Applied Mathematics and Computer Science. I am very interested in data science and I will be using this site to put up some of my work.
 
