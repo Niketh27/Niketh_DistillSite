@@ -1,8 +1,8 @@
 ---
-title: "About Me"
+title: "Welcome!"
 site: distill::distill_website
 description: |
-  Welcome!
+  I'm Niketh
 ---
 
 ```{r setup, include=FALSE}
