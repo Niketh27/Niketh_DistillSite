@@ -5,14 +5,14 @@
       "title": "About",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-14T14:42:33-05:00"
+      "last_modified": "2021-04-14T14:43:46-05:00"
     },
     {
       "path": "blog.html",
       "title": "Blog",
       "author": [],
       "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-14T14:42:33-05:00"
+      "last_modified": "2021-04-14T14:43:47-05:00"
     },
     {
       "path": "index.html",
@@ -20,7 +20,7 @@
       "description": "I'm Niketh",
       "author": [],
       "contents": "\r\n\r\nWelcome to my site. I’m a senior at Macalester College majoring in Applied Mathematics and Computer Science. I am very interested in data science and I will be using this site to put up some of my work.\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-04-14T14:42:34-05:00"
+      "last_modified": "2021-04-14T14:43:47-05:00"
     }
   ],
   "collections": ["posts/posts.json"]
