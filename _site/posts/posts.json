@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-04-14-kju-trump/",
+    "title": "Do you look more like Kim Jong Un or Donald Trump?",
+    "description": "A Deep Learning Solution to the Popular Dilemna.",
+    "author": [
+      {
+        "name": "Niketh Gamage",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-14",
+    "categories": [],
+    "contents": "\r\nEver sit there relaxing after work and wondered “Do I look more like Kim Jong Un or Donald Trump?”. Now you can find the definitive answer.\r\nClick here and upload a picture of your face to find out. This might take about a minute to setup the model but I am in the process of deploying the application at a permanent home.\r\nThis model uses a Convolutional Neural Network (CNN) and was developed with the help of the fastaiv2 package.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-04-14-kju-trump/kju-trump-preview.jpg",
+    "last_modified": "2021-04-14T14:42:25-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-04-06-lendingclubarticle/",
     "title": "Lending Club Model",
     "description": "A Loan Payback Prediction Model with lasso, random forest and knn.",

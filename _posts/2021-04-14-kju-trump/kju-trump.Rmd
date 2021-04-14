@@ -1,0 +1,27 @@
+---
+title: "Do you look more like Kim Jong Un or Donald Trump?"
+description: |
+  A Deep Learning Solution to the Popular Dilemna.
+author:
+  - name: Niketh Gamage
+    url: {}
+date: 04-14-2021
+preview: kju-trump-preview.jpg
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Ever sit there relaxing after work and wondered "Do I look more like Kim Jong Un or Donald Trump?". Now you can find the definitive answer.
+
+
+[Click here and upload a picture of your face to find out.](https://mybinder.org/v2/gh/Niketh27/KJU-Trump-Model/HEAD?urlpath=%2Fvoila%2Frender%2FKJU-Trump.ipynb) This might take about a minute to setup the model but I am in the process of deploying the application at a permanent home.
+
+This model uses a Convolutional Neural Network (CNN) and was developed with the help of the fastaiv2 package. 
+
+
