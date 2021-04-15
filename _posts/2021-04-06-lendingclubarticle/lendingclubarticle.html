@@ -111,12 +111,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Lending Club Model"]},{"type":"character","attributes":{},"value":["A Loan Payback Prediction Model with lasso, random forest and knn.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Niketh Gamage"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["04-06-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","preview","output"]}},"value":[{"type":"character","attributes":{},"value":["Lending Club Model"]},{"type":"character","attributes":{},"value":["A Loan Payback Prediction Model with lasso, random forest and knn.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Niketh Gamage"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["04-06-2021"]},{"type":"character","attributes":{},"value":["Lending_Model_preview.png"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["lendingclubarticle_files/anchor-4.2.2/anchor.min.js","lendingclubarticle_files/bowser-1.9.3/bowser.min.js","lendingclubarticle_files/distill-2.2.21/template.v2.js","lendingclubarticle_files/figure-html5/unnamed-chunk-2-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-22-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-23-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-23-2.png","lendingclubarticle_files/figure-html5/unnamed-chunk-27-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-3-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-33-1.png","lendingclubarticle_files/jquery-1.11.3/jquery.min.js","lendingclubarticle_files/popper-2.6.0/popper.min.js","lendingclubarticle_files/tippy-6.2.7/tippy-bundle.umd.min.js","lendingclubarticle_files/tippy-6.2.7/tippy-light-border.css","lendingclubarticle_files/tippy-6.2.7/tippy.css","lendingclubarticle_files/tippy-6.2.7/tippy.umd.min.js","lendingclubarticle_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["Lending_Model_preview.png","lendingclubarticle_files/anchor-4.2.2/anchor.min.js","lendingclubarticle_files/bowser-1.9.3/bowser.min.js","lendingclubarticle_files/distill-2.2.21/template.v2.js","lendingclubarticle_files/figure-html5/unnamed-chunk-2-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-22-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-23-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-23-2.png","lendingclubarticle_files/figure-html5/unnamed-chunk-27-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-3-1.png","lendingclubarticle_files/figure-html5/unnamed-chunk-33-1.png","lendingclubarticle_files/jquery-1.11.3/jquery.min.js","lendingclubarticle_files/popper-2.6.0/popper.min.js","lendingclubarticle_files/tippy-6.2.7/tippy-bundle.umd.min.js","lendingclubarticle_files/tippy-6.2.7/tippy-light-border.css","lendingclubarticle_files/tippy-6.2.7/tippy.css","lendingclubarticle_files/tippy-6.2.7/tippy.umd.min.js","lendingclubarticle_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1677,16 +1677,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <pre><code># A tibble: 9,643 x 113
    funded_amnt int_rate annual_inc delinq_2yrs inq_last_6mths
          &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;       &lt;dbl&gt;          &lt;dbl&gt;
- 1      0.0224   0.0818     -0.861      -0.357         -0.708
- 2      1.80    -0.299      -0.143      -0.357         -0.708
- 3     -0.658    0.520      -0.143      -0.357          1.45 
- 4      0.100    0.0208      0.419      -0.357         -0.708
- 5     -1.38    -1.18       -0.568      -0.357         -0.708
- 6     -0.658   -0.398      -0.919      -0.357         -0.708
- 7     -0.547   -1.57       -0.279      -0.357         -0.708
- 8     -0.100   -0.838       2.11        1.80          -0.708
- 9     -1.10    -0.717       0.187      -0.357          1.45 
-10      0.457   -0.109      -0.609       0.723         -0.708
+ 1      0.0218   0.0789     -0.862      -0.367         -0.705
+ 2      1.80    -0.301      -0.146      -0.367         -0.705
+ 3     -0.659    0.516      -0.146      -0.367          1.44 
+ 4      0.0999   0.0181      0.414      -0.367         -0.705
+ 5     -1.38    -1.17       -0.570      -0.367         -0.705
+ 6     -0.659   -0.400      -0.920      -0.367         -0.705
+ 7     -0.547   -1.57       -0.282      -0.367         -0.705
+ 8     -0.101   -0.838       2.10        1.82          -0.705
+ 9     -1.11    -0.717       0.182      -0.367          1.44 
+10      0.457   -0.111      -0.611       0.729         -0.705
 # ... with 9,633 more rows, and 108 more variables: revol_util &lt;dbl&gt;,
 #   open_il_6m &lt;dbl&gt;, open_il_12m &lt;dbl&gt;, open_il_24m &lt;dbl&gt;,
 #   total_bal_il &lt;dbl&gt;, all_util &lt;dbl&gt;, inq_fi &lt;dbl&gt;,
@@ -1772,7 +1772,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </code></pre>
 </div>
 </div>
-Finding the best tuning parameter and finalizing the model.
+<p>Finding the best tuning parameter and finalizing the model.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Best tuning parameter by smallest rmse</span>
@@ -1787,7 +1787,7 @@ Finding the best tuning parameter and finalizing the model.
 </code></pre>
 </div>
 </div>
-Let’s take a look at the model estimates for our predictors
+<p>Let’s take a look at the model estimates for our predictors</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>lending_lasso_final_mod</span> <span class='op'>%&gt;%</span> 
@@ -1796,21 +1796,21 @@ Let’s take a look at the model estimates for our predictors
 </code></pre>
 </div>
 <pre><code># A tibble: 113 x 3
-   term           estimate  penalty
-   &lt;chr&gt;             &lt;dbl&gt;    &lt;dbl&gt;
- 1 (Intercept)     1.29    0.000464
- 2 funded_amnt    -0.0172  0.000464
- 3 int_rate       -0.989   0.000464
- 4 annual_inc     -0.141   0.000464
- 5 delinq_2yrs     0.0133  0.000464
- 6 inq_last_6mths -0.130   0.000464
- 7 revol_util      0.0701  0.000464
- 8 open_il_6m     -0.104   0.000464
- 9 open_il_12m    -0.254   0.000464
-10 open_il_24m     0.00632 0.000464
+   term           estimate penalty
+   &lt;chr&gt;             &lt;dbl&gt;   &lt;dbl&gt;
+ 1 (Intercept)      1.16   0.00599
+ 2 funded_amnt      0      0.00599
+ 3 int_rate        -0.776  0.00599
+ 4 annual_inc      -0.0471 0.00599
+ 5 delinq_2yrs      0      0.00599
+ 6 inq_last_6mths  -0.0716 0.00599
+ 7 revol_util       0      0.00599
+ 8 open_il_6m       0      0.00599
+ 9 open_il_12m     -0.185  0.00599
+10 open_il_24m      0      0.00599
 # ... with 103 more rows</code></pre>
 </div>
-Then we fit the model with the testing data and check the metrics.
+<p>Then we fit the model with the testing data and check the metrics.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Fit model with best tuning parameter(s) to training data and apply to test data</span>
@@ -1825,7 +1825,7 @@ Then we fit the model with the testing data and check the metrics.
 <pre><code># A tibble: 2 x 4
   .metric  .estimator .estimate .config             
   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               
-1 accuracy binary         0.760 Preprocessor1_Model1
+1 accuracy binary         0.762 Preprocessor1_Model1
 2 roc_auc  binary         0.779 Preprocessor1_Model1</code></pre>
 </div>
 <p>Not amazing but not too bad either. Now let’s move on to the random forest model.</p>
@@ -1880,7 +1880,7 @@ Then we fit the model with the testing data and check the metrics.
 </code></pre>
 </div>
 </div>
-Finalizing the model and fitting it to the testing data
+<p>Finalizing the model and fitting it to the testing data</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='co'># Best tuning parameter by smallest rmse</span>
@@ -1909,8 +1909,8 @@ Finalizing the model and fitting it to the testing data
 <pre><code># A tibble: 2 x 4
   .metric  .estimator .estimate .config             
   &lt;chr&gt;    &lt;chr&gt;          &lt;dbl&gt; &lt;chr&gt;               
-1 accuracy binary         0.995 Preprocessor1_Model1
-2 roc_auc  binary         1.00  Preprocessor1_Model1</code></pre>
+1 accuracy binary         0.994 Preprocessor1_Model1
+2 roc_auc  binary         0.998 Preprocessor1_Model1</code></pre>
 </div>
 <p>Then we use the DALEX and DALEXtra libraries to build plots of the residuals of each of the models.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1932,9 +1932,9 @@ Finalizing the model and fitting it to the testing data
   -&gt; predict function  :  yhat.workflow  will be used ( [33m default [39m )
   -&gt; predicted values  :  No value for predict function target column. ( [33m default [39m )
   -&gt; model_info        :  package tidymodels , ver. 0.1.2 , task classification ( [33m default [39m ) 
-  -&gt; predicted values  :  numerical, min =  0.01086639 , mean =  0.7258119 , max =  0.9996281  
+  -&gt; predicted values  :  numerical, min =  0.02582564 , mean =  0.7258135 , max =  0.9798892  
   -&gt; residual function :  difference between y and yhat ( [33m default [39m )
-  -&gt; residuals         :  numerical, min =  0.01858075 , mean =  0.9999996 , max =  1.989134  
+  -&gt; residuals         :  numerical, min =  0.05164211 , mean =  0.9999979 , max =  1.974174  
  [32m A new explainer has been created! [39m </code></pre>
 <div class="sourceCode">
 <pre class="sourceCode r"><code class="sourceCode r"><span class='va'>rf_explain</span> <span class='op'>&lt;-</span> 
@@ -1954,9 +1954,9 @@ Finalizing the model and fitting it to the testing data
   -&gt; predict function  :  yhat.workflow  will be used ( [33m default [39m )
   -&gt; predicted values  :  No value for predict function target column. ( [33m default [39m )
   -&gt; model_info        :  package tidymodels , ver. 0.1.2 , task classification ( [33m default [39m ) 
-  -&gt; predicted values  :  numerical, min =  0 , mean =  0.702576 , max =  1  
+  -&gt; predicted values  :  numerical, min =  0 , mean =  0.702578 , max =  1  
   -&gt; residual function :  difference between y and yhat ( [33m default [39m )
-  -&gt; residuals         :  numerical, min =  0.55 , mean =  1.023236 , max =  1.35  
+  -&gt; residuals         :  numerical, min =  0.54 , mean =  1.023233 , max =  1.32  
  [32m A new explainer has been created! [39m </code></pre>
 </div>
 <div class="layout-chunk" data-layout="l-body">
@@ -2036,9 +2036,6 @@ Finalizing the model and fitting it to the testing data
 </code></pre>
 </div>
 </div>
-<ol start="16" type="1">
-<li>Create a model stack with the candidate models from the previous parts of the exercise and use the <code>blend_predictions()</code> function to find the coefficients of the stacked model. Create a plot examining the performance metrics for the different penalty parameters to assure you have captured the best one. If not, adjust the penalty. (HINT: use the <code>autoplot()</code> function). Which models are contributing most?</li>
-</ol>
 <p>Now we stack the 3 model tuning parameters and ‘blend’ them to optimize our final model.</p>
 <div class="layout-chunk" data-layout="l-body">
 <div class="sourceCode">
@@ -2051,20 +2048,20 @@ Finalizing the model and fitting it to the testing data
 <span class='fu'>as_tibble</span><span class='op'>(</span><span class='va'>lending_stack</span><span class='op'>)</span>
 </code></pre>
 </div>
-<pre><code># A tibble: 9,643 x 39
+<pre><code># A tibble: 9,643 x 37
    Class .pred_bad_lendingrf~ .pred_bad_lendingrf~ .pred_bad_lendingr~
    &lt;fct&gt;                &lt;dbl&gt;                &lt;dbl&gt;               &lt;dbl&gt;
- 1 good                0.134                0.112               0.152 
- 2 good                0.195                0.213               0.183 
- 3 good                0.254                0.326               0.347 
- 4 good                0.119                0.127               0.196 
- 5 good                0.141                0.153               0.117 
- 6 good                0.129                0.110               0.130 
- 7 good                0.0589               0.0688              0.0468
- 8 good                0.102                0.0941              0.140 
- 9 good                0.0918               0.112               0.164 
-10 good                0.0593               0.0860              0.0674
-# ... with 9,633 more rows, and 35 more variables:
+ 1 good                0.180                0.176               0.163 
+ 2 good                0.156                0.194               0.203 
+ 3 good                0.197                0.314               0.345 
+ 4 good                0.0905               0.178               0.170 
+ 5 good                0.114                0.102               0.121 
+ 6 good                0.115                0.151               0.126 
+ 7 good                0.0555               0.0656              0.0641
+ 8 good                0.0942               0.0796              0.150 
+ 9 good                0.0949               0.177               0.115 
+10 good                0.0665               0.0781              0.0746
+# ... with 9,633 more rows, and 33 more variables:
 #   .pred_bad_lendingrf_tune_1_2 &lt;dbl&gt;,
 #   .pred_bad_lendingrf_tune_1_5 &lt;dbl&gt;,
 #   .pred_bad_lendingrf_tune_1_8 &lt;dbl&gt;,
@@ -2081,13 +2078,11 @@ Finalizing the model and fitting it to the testing data
 #   .pred_good_lendingrf_tune_1_6 &lt;dbl&gt;,
 #   .pred_good_lendingrf_tune_1_9 &lt;dbl&gt;,
 #   .pred_bad_lending_lasso_tune_1_01 &lt;dbl&gt;,
-#   .pred_bad_lending_lasso_tune_1_06 &lt;dbl&gt;,
 #   .pred_bad_lending_lasso_tune_1_07 &lt;dbl&gt;,
 #   .pred_bad_lending_lasso_tune_1_08 &lt;dbl&gt;,
 #   .pred_bad_lending_lasso_tune_1_09 &lt;dbl&gt;,
 #   .pred_bad_lending_lasso_tune_1_10 &lt;dbl&gt;,
 #   .pred_good_lending_lasso_tune_1_01 &lt;dbl&gt;,
-#   .pred_good_lending_lasso_tune_1_06 &lt;dbl&gt;,
 #   .pred_good_lending_lasso_tune_1_07 &lt;dbl&gt;,
 #   .pred_good_lending_lasso_tune_1_08 &lt;dbl&gt;,
 #   .pred_good_lending_lasso_tune_1_09 &lt;dbl&gt;,
@@ -2120,9 +2115,9 @@ Finalizing the model and fitting it to the testing data
 <pre><code># A tibble: 3 x 3
   member                        type             weight
   &lt;chr&gt;                         &lt;chr&gt;             &lt;dbl&gt;
-1 .pred_good_lendingrf_tune_1_2 rand_forest      4.57  
-2 .pred_good_lendingrf_tune_1_3 rand_forest      0.321 
-3 .pred_good_knn_tune_1_1       nearest_neighbor 0.0188</code></pre>
+1 .pred_good_lendingrf_tune_1_2 rand_forest      4.87  
+2 .pred_good_knn_tune_1_1       nearest_neighbor 0.0335
+3 .pred_good_lendingrf_tune_1_3 rand_forest      0.0202</code></pre>
 </div>
 <p>We then create the model stack and apply it onto our test data to see how it performs.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2184,7 +2179,7 @@ Finalizing the model and fitting it to the testing data
 </code></pre>
 </div>
 <p><img src="lendingclubarticle_files/figure-html5/unnamed-chunk-33-1.png" width="624" /></p>
-<pre><code>Area under the curve (AUC): 0.990</code></pre>
+<pre><code>Area under the curve (AUC): 0.992</code></pre>
 </div>
 <p>We get an auc_roc of 0.95 which is very very good for a classification model of this nature.</p>
 <h2 id="shiny-app">Shiny app</h2>

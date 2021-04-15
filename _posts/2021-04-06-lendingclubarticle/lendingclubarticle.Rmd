@@ -6,6 +6,7 @@ author:
   - name: Niketh Gamage
     url: {}
 date: 04-06-2021
+preview: Lending_Model_preview.png
 output:
   distill::distill_article:
     self_contained: false
@@ -195,6 +196,7 @@ lending_lasso_tune <-
 ```
 
 Finding the best tuning parameter and finalizing the model.
+
 ```{r}
 # Best tuning parameter by smallest rmse
 best_param <- lending_lasso_tune %>% 
@@ -210,6 +212,7 @@ lending_lasso_final_mod <- lending_lasso_final_wf %>%
 ```
 
 Let's take a look at the model estimates for our predictors
+
 ```{r}
 lending_lasso_final_mod %>% 
   pull_workflow_fit() %>% 
@@ -218,6 +221,7 @@ lending_lasso_final_mod %>%
 
 
 Then we fit the model with the testing data and check the metrics.
+
 ```{r}
 # Fit model with best tuning parameter(s) to training data and apply to test data
 lending_lasso_test <- lending_lasso_final_wf %>% 
@@ -286,6 +290,7 @@ lendingrf_tune <-
 
 
 Finalizing the model and fitting it to the testing data
+
 ```{r}
 
 # Best tuning parameter by smallest rmse
@@ -377,6 +382,7 @@ rf_var_imp <-
 
 plot(rf_var_imp, show_boxplots = TRUE)
 ```
+
 Interest rate, annual income and verification status seem to be very important predictors which is not all that suprising.
 
 Now we set up the knn model and tune k. 
@@ -405,9 +411,6 @@ knn_tune <-
     control = control_stack_grid()
   )
 ```
-
-
-16. Create a model stack with the candidate models from the previous parts of the exercise and use the `blend_predictions()` function to find the coefficients of the stacked model. Create a plot examining the performance metrics for the different penalty parameters to assure you have captured the best one. If not, adjust the penalty. (HINT: use the `autoplot()` function). Which models are contributing most?
 
 Now we stack the 3 model tuning parameters and 'blend' them to optimize our final model.
 
@@ -469,6 +472,7 @@ true_class <- pred_compare %>%
 ```{r}
 roc.curve(true_class, predictions)
 ```
+
 We get an auc_roc of 0.95 which is very very good for a classification model of this nature.
 
 ## Shiny app
