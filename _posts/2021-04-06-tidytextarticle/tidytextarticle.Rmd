@@ -20,7 +20,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### **Introduction** 
 
-Today, we will talk about the `TidyText` package. The `tidytext` packages allows us to effectively do text mining tasks by converting text data into *tidy formats*.  We can then incorporated these tidy data sets with other tools in data science or machine learning. 
+The `tidytext` packages allows us to effectively do text mining tasks by converting text data into *tidy formats*.  We can then incorporated these tidy data sets with other tools in data science or machine learning. 
 
 In this tutorial, we will explain some of the key functions used in the `tidytext` package by using a simple example. We will then ask you to work on questions using a different data set: Russian Troll Tweets. 
 
